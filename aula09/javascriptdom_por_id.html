@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Primeiros passos com Dom por ID</title>
+        <style>
+           body{
+            background:  rgb(66, 161, 196);
+            color: white;
+            font: normal 18pt Arial;
+           } 
+        </style>
+    </head>
+       <body>
+        <h1>Iniciano estudo Dom </h1>
+
+        <P> o primeiro paragrafo</P>  <!--paragrafo [0]-->
+
+        <p> o <strong>segundo</strong> paragrafo</p> <!--paragrafo [1]-->
+
+        <p> o terceiro <strong> paragrafo</strong></p> <!--paragrafo [2]-->
+
+        <p> o quarto paragrafo </p><!--paragrafo [3]-->
+        
+        
+        
+        
+
+<!--por Id-->
+       <div id="id">Aqui voce formata a id (individual)</div>
+          <script>
+           var id = window.document.getElementById('id') 
+           id.style.background='white'
+           id.style.color='pink'
+           id.style.fontFamily='gabriola' 
+
+           //id.innerText ='Aqui eu mudo o elemento ou texto dentro da div'
+          //window.document.getElementById('id').innerText = 'Aqui eu mudo o elemento ou texto dentro da div'
+          </script>
+
+       </body>
+</html>

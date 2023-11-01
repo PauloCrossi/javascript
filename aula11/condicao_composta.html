@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição Composta</title>
+</head>
+<body>
+    <h2>Brasileiro ou Estrangeiro</h2>
+   <p> Que País voce é?  <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="país()"></p>
+    <div id="res"></div><!--div res(é o resultado)-->
+    <script>
+        function país(){
+            var txtv = window.document.querySelector('input#txtvel') /*txtv é valor digitado dentro da caixa ( id='txtvel'*/
+            var res = window.document.querySelector('div#res')
+            var xp = String(txtv.value) /*é o valor que esta na caixa sendo verificado(value)quando clicado */
+            res.innerHTML = `<p>Você nasceu em que País <strong>${xp}</strong></p>`
+            if (xp =="Brasil") {
+                res.innerHTML += `<P>Então você é <strong>Brasileiro</strong>.</p>` /* sinal de  += é concatenado por isso é uma string*/
+            } else {
+                res.innerHTML += `<P>Então você é <strong>Estrangeiro</strong>.</p>`
+            }
+                
+            }
+                
+            
+             
+        
+        
+    </script>
+</body>
+</html>

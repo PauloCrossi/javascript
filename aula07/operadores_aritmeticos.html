@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador_Aritméticos</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(22, 169, 120);
+        }
+
+        h1,
+        h2 {
+            font-size: 30pt;
+            color: rgb(21, 18, 228);
+        }
+
+        #soma,
+        #subtração,
+        #mutiplicação,
+        #divisão,
+        #resto,
+        #potencia {
+            color: rgb(21, 18, 228);
+            font-size: 25pt;
+        }
+
+        p {
+            color: rgb(167, 47, 10);
+            font-size: 20pt;
+        }
+    </style>
+    <!-- sinais aritméticas + soma, - subtração, * mutiplicação, / divisão, % resto da divisão, ** potencia -->
+
+    <!-- soma -->
+    <h1>Soma de dois numeros</h1>
+    <p> Java script ( let s = 80 + 15) </p>
+    <p id="soma"></p>
+    <script>
+        let s = 80 + 15;
+        document.getElementById("soma").innerHTML = " resultado = " + s; 
+    </script>
+
+    <!-- Subtração -->
+    <h1>Subtração de dois numeros</h1>
+    <p> Java script ( let sb = 80 - 15) </p>
+    <p id="subtração"></p>
+    <script>
+        let sb = 80 - 15;
+        document.getElementById("subtração").innerHTML ="resultado = " + sb;
+    </script>
+
+    <!-- Mutiplicação -->
+    <h1>Mutiplcação de dois numeros</h1>
+    <p> Java script ( let m = 80 * 15) </p>
+    <p id="mutiplicação"></p>
+    <script>
+        let m = 80 * 15;
+        document.getElementById("mutiplicação").innerHTML =" resultado = " + m;
+    </script>
+
+    <!-- Divisão -->
+    <h1>Divisão exata sem resto</h1>
+    <p> Java script ( let d = 1200 / 80) </p>
+    <p id="divisão"></p>
+    <script>
+        let d = 1200 / 80;
+        document.getElementById("divisão").innerHTML =" resultado = "+ d;
+    </script>
+
+    <!-- Resto da Divisão -->
+    <h1>Resto de uma divisão</h1>
+    <p> Java script ( let r = 13 % 2) <br> (%) resultado do resto da divisão </p>
+    <p id="resto"></p>
+    <script>
+        let r = 13 % 2;
+        document.getElementById("resto").innerHTML =" resultado = "+ r;
+    </script>
+    <!-- Potencia -->
+    <h1>Potencia</h1>
+    <p> Java script ( let p = 15 ** 2) <br>(**) resultado de (15)²  </p>
+    <p id="potencia"></p>
+    <script>
+        let p = 15 ** 2;
+        document.getElementById("potencia").innerHTML = " resultado = " + p;
+    </script>
+</body>
+
+</html>

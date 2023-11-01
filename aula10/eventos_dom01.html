@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom 01 funções</title>
+    <style>
+    div#area{
+        
+        background:  rgb(10, 154, 68);
+        color:white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px; 
+        text-align:center;
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Metodo 1 codigos no HTML </h1>
+    <div id="area" onclick='clicar()'onmouseenter= "entrar()" onmouseout="sair ()" >
+        Aperte Aqui
+    </div>
+<script>
+    var area = window.document.getElementById('area')
+    function clicar() {
+        
+      area.innerText = "Clicou!"
+      area.style.background ="blue"
+    }
+    function entrar(){
+           
+        area.innerText = "Entrou!"
+        area.style.background ="red"
+    }
+    function sair(){
+       
+        area.innerText = "Saiu!"
+        area.style.background = "green"
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula Javas Script</title>
+    <style>
+        body{
+            background-color: chocolate;
+            color: white;
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Parabens voce chego lá</p>
+    <script>
+         // window.alert("teste java script")
+         // window.confirm("confirmado javascript ta funcionando")
+         // window.prompt("Qual seu nome?")
+         // var nome = window.prompt("Qual seu  nome?") 
+         // window.alert("Parabéns logo logo chego lá," + nome)
+         var n1 = Number.parseInt(window.prompt("Digite o primeiro número")) // Number.parseInt calcula números  interos
+         var n2 = Number.parseFloat(window.prompt('Digite o segundo número')) //Number.parseFloat calcula números real  ex " 5.7 "
+         var n3 = Number(window.prompt('Digite o terceiro número')) // Number serve tanto para números inteiros quanto para números real
+         var s = n1 / n2  + n3
+         window.alert(`Valor Total da divisão ${n1} / ${n2} + ${n3}  = ${s} `)
+        // window.alert('Valor Total = '+ String(s) ) // resulado (s) se tornou uma String
+         //(number + number) para adição
+         //(string + string) para concatenação
+    </script>
+</body>
+</html>
